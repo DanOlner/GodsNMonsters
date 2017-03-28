@@ -5,37 +5,12 @@
  */
 package godsnmonsters;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Dan Olner
  */
-public class BodyPart {
-
-    GodsNMonsters p;
-    Joint[] joints;
+public interface BodyPart {
     
-    ArrayList<BodyPiece> pieces = new ArrayList<>();
-
-    public BodyPart(GodsNMonsters p, Joint[] joints) {
-        this.p = p;
-        this.joints = joints;
-    }
-    
-    public void newBodyPiece(BodyPiece bp){
-        
-        pieces.add(bp);
-        
-    }
-    
-    public void draw(){
-        
-        for(BodyPiece bp : pieces){
-            bp.draw();
-        }
-        
-    }
-    
+    public void draw();
     
 }

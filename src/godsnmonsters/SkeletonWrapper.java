@@ -126,7 +126,7 @@ public class SkeletonWrapper {
     private void createBodyParts() {
 
         //test bodypart
-        BodyPart arms = new BodyPart(p, joints);
+        BodyPartFromImages arms = new BodyPartFromImages(p, joints);
 
         //add bodypiece
         //LEFT FOREARM, ORIGIN AT WRIST, REFERENCE ELBOW. 
@@ -160,7 +160,7 @@ public class SkeletonWrapper {
         bodyParts.add(arms);
         
         //Legs
-        BodyPart legs = new BodyPart(p, joints);
+        BodyPartFromImages legs = new BodyPartFromImages(p, joints);
 
         //add bodypiece
         //LEFT UPPER LEG. 
@@ -184,13 +184,15 @@ public class SkeletonWrapper {
         
         
         //RIBS
-        BodyPart ribs = new BodyPart(p, joints);
+        BodyPartFromImages ribs = new BodyPartFromImages(p, joints);
         
         ribs.newBodyPiece(new BodyPiece(p, "data/images/ribcage1.png",
                 joints[KinectPV2.JointType_SpineShoulder], joints[KinectPV2.JointType_SpineMid],
                 new PVector(227,36), new PVector(236,430), false, false));
         
         bodyParts.add(ribs);
+        
+//        bodyParts.add(new BodyPartTraer(p, joints));
         
 //        legs.newBodyPiece(new BodyPiece(p, "data/images/vitruvianupperleg.png",
 //                joints[KinectPV2.JointType_HipLeft], joints[KinectPV2.JointType_KneeLeft],

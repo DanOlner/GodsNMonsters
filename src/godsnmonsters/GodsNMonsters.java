@@ -33,7 +33,7 @@ Thomas Sanchez Lengeling.
     public static boolean saveDataFromSkeleton1 = false;
     public static boolean saveDataToFileOnNextFrame = false;
 
-    public static boolean loadDataForSkeleton1 = true;
+    public static boolean loadDataForSkeleton1 = false;
 
     //tests
     PImage img1, img2;
@@ -58,7 +58,12 @@ Thomas Sanchez Lengeling.
     }
 
     public void draw() {
+        
         background(0);
+                
+//        fill(0,100);
+//        rect(0,0,width);
+//        fill(0);
 
         //check for new / persisting / dead skeletons before getting data
         kinectSkeletons = kinect.getSkeletonColorMap();
