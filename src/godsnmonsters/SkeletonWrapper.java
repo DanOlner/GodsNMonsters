@@ -192,7 +192,7 @@ public class SkeletonWrapper {
         
         bodyParts.add(ribs);
         
-//        bodyParts.add(new BodyPartTraer(p, joints));
+        bodyParts.add(new BodyPartTraer(p, joints));
         
 //        legs.newBodyPiece(new BodyPiece(p, "data/images/vitruvianupperleg.png",
 //                joints[KinectPV2.JointType_HipLeft], joints[KinectPV2.JointType_KneeLeft],

@@ -33,7 +33,7 @@ Thomas Sanchez Lengeling.
     public static boolean saveDataFromSkeleton1 = false;
     public static boolean saveDataToFileOnNextFrame = false;
 
-    public static boolean loadDataForSkeleton1 = false;
+    public static boolean loadDataForSkeleton1 = true;
 
     //tests
     PImage img1, img2;
